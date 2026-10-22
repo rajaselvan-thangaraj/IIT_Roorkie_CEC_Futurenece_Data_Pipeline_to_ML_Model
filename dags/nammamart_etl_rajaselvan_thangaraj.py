@@ -49,6 +49,7 @@ default_args = {
     schedule="0 9 * * 1-6",
     start_date=pendulum.datetime(2026, 9, 1, tz="Asia/Kolkata"),
     catchup=False,
+    max_active_runs=1,
     default_args=default_args,
     tags=["fde", "nammamart", "etl", "star_schema"],
     doc_md="""
